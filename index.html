@@ -9,14 +9,10 @@
 
   <meta
     name="description"
-    content="Academic website of Hasan Mahmood, mathematician, researcher, educator, and PhD candidate at Dalhousie University."
+    content="Academic website of Hasan Mahmood, PhD candidate in Mathematics at Dalhousie University."
   >
 
   <style>
-    .hero p {
-    text-align: justify;
-    line-height: 1.8;
-}
     :root {
       --navy: #102a43;
       --navy-light: #243b53;
@@ -116,10 +112,7 @@
       background: var(--white);
       border-radius: 14px;
       padding: 34px;
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) 230px;
-      gap: 38px;
-      align-items: center;
+      display: block;
       box-shadow: var(--shadow);
     }
 
@@ -131,21 +124,8 @@
 
     .hero p {
       font-size: 1.08rem;
-    }
-
-    .photo-placeholder {
-      width: 220px;
-      height: 260px;
-      border-radius: 12px;
-      background: linear-gradient(145deg, var(--light-blue), #c9d9e8);
-      border: 1px solid var(--border);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: var(--navy);
-      font-size: 3.3rem;
-      font-weight: bold;
-      margin: auto;
+      line-height: 1.8;
+      text-align: justify;
     }
 
     .quick-links {
@@ -267,11 +247,6 @@
         grid-template-columns: 1fr;
       }
 
-      .photo-placeholder {
-        order: -1;
-        width: 190px;
-        height: 220px;
-      }
     }
 
     @media (max-width: 650px) {
@@ -300,18 +275,18 @@
 <body>
 
   <header class="top-banner">
-  <h1>Hasan Mahmood</h1>
+    <h1>Hasan Mahmood</h1>
 
-  <p class="subtitle">
+    <p class="subtitle">
     PhD Candidate<br>
     Co-Manager, Nova Scotia Math Circles Program
-  </p>
+    </p>
 
-  <p class="affiliation">
+    <p class="affiliation">
     Department of Mathematics and Statistics<br>
     Dalhousie University
-  </p>
-</header>
+    </p>
+  </header>
 
   <nav>
     <div class="nav-inner">
@@ -322,6 +297,7 @@
       <a href="#mentoring">Mentoring</a>
       <a href="#outreach">Outreach</a>
       <a href="#talks">Talks</a>
+      <a href="cv.html">CV</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
@@ -332,11 +308,11 @@
   <div>
     <h2>Welcome</h2>
 
-    <p style="text-align: justify;">
+    <p>
       I am currently pursuing a PhD in Mathematics at Dalhousie University, where my research focuses on combinatorial commutative algebra. I also serve as an Associate Professor of Mathematics at Government College University Lahore and have more than 15 years of experience in university teaching, research, graduate supervision, and academic leadership. Previously, I was a Visiting Postdoctoral Fellow and Adjunct Assistant Professor at Tulane University (2019–2020).
     </p>
 
-    <p style="text-align: justify;">
+    <p>
       My research interests lie at the intersection of commutative algebra and combinatorics, with particular emphasis on monomial ideals, simplicial complexes, and their algebraic, combinatorial, and topological aspects. Through my role as Co-Manager of the Nova Scotia Math Circles Program, I contribute to mathematics outreach and help foster mathematical curiosity among school students across Nova Scotia. My work reflects a strong commitment to advancing mathematical research, fostering student learning, and promoting mathematics through outreach and community engagement.
     </p>
 
@@ -346,10 +322,6 @@
           <a class="button" href="#teaching">Teaching</a>
           <a class="button" href="#contact">Contact</a>
         </div>
-      </div>
-
-      <div class="photo-placeholder" aria-label="Photo placeholder">
-        HM
       </div>
     </section>
 
