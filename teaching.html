@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Teaching | Hasan Mahmood</title>
+
+  <meta
+    name="description"
+    content="Teaching experience and courses taught by Hasan Mahmood."
+  >
+
+  <style>
+    :root {
+      --navy: #102a43;
+      --navy-light: #243b53;
+      --blue: #3d6f9e;
+      --background: #f7f9fc;
+      --white: #ffffff;
+      --text: #24303d;
+      --muted: #5f6c7b;
+      --border: #d9e2ec;
+      --shadow: 0 10px 30px rgba(16, 42, 67, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      background: var(--background);
+      line-height: 1.65;
+    }
+
+    a {
+      color: var(--blue);
+    }
+
+    a:hover {
+      color: var(--navy);
+    }
+
+    .top-banner {
+      background: linear-gradient(120deg, var(--navy), var(--blue));
+      color: var(--white);
+      text-align: center;
+      padding: 45px 20px 38px;
+    }
+
+    .top-banner h1 {
+      font-size: 2.5rem;
+      margin: 0 0 10px;
+    }
+
+    .top-banner .subtitle {
+      margin: 8px 0 0;
+      font-size: 1.25rem;
+    }
+
+    .top-banner .affiliation {
+      margin: 4px 0 0;
+      color: #d9e7f3;
+      font-size: 1.05rem;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--navy-light);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    }
+
+    .nav-inner {
+      max-width: 1180px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      padding: 16px 18px;
+      font-size: 1rem;
+      transition: background 0.2s ease;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background: var(--blue);
+      color: var(--white);
+    }
+
+    main {
+      max-width: 1050px;
+      margin: 34px auto;
+      padding: 0 20px 60px;
+    }
+
+    .page-intro,
+    .section-card {
+      background: var(--white);
+      border-radius: 14px;
+      padding: 30px 34px;
+      box-shadow: var(--shadow);
+    }
+
+    .page-intro h2,
+    .section-title {
+      color: var(--navy);
+      margin-top: 0;
+    }
+
+    .page-intro h2 {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .page-intro p {
+      margin-bottom: 0;
+      text-align: justify;
+      font-size: 1.06rem;
+    }
+
+    .section-card {
+      margin-top: 28px;
+    }
+
+    .section-title {
+      margin-bottom: 22px;
+      padding-bottom: 9px;
+      border-bottom: 2px solid var(--border);
+      font-size: 1.7rem;
+    }
+
+    .institution {
+      margin-top: 28px;
+    }
+
+    .institution:first-of-type {
+      margin-top: 0;
+    }
+
+    .institution h3 {
+      color: var(--navy);
+      margin-bottom: 4px;
+      font-size: 1.3rem;
+    }
+
+    .institution-note {
+      color: var(--muted);
+      margin-top: 0;
+      font-style: italic;
+    }
+
+    .course-list {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0 0;
+    }
+
+    .course-list li {
+      display: grid;
+      grid-template-columns: minmax(260px, 1fr) minmax(150px, 220px);
+      gap: 20px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .course-list li:last-child {
+      border-bottom: none;
+    }
+
+    .course-title {
+      font-weight: bold;
+      color: var(--text);
+    }
+
+    .course-term {
+      color: var(--muted);
+      text-align: right;
+    }
+
+    .grouped-courses {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px 36px;
+    }
+
+    .course-group h4 {
+      color: var(--blue);
+      margin: 0 0 8px;
+      font-size: 1.08rem;
+    }
+
+    .course-group ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .course-group li {
+      margin-bottom: 6px;
+    }
+
+    footer {
+      background: var(--navy);
+      color: #d9e7f3;
+      text-align: center;
+      padding: 25px 20px;
+    }
+
+    @media (max-width: 700px) {
+      nav a {
+        padding: 12px 10px;
+        font-size: 0.9rem;
+      }
+
+      .page-intro,
+      .section-card {
+        padding: 23px;
+      }
+
+      .course-list li {
+        grid-template-columns: 1fr;
+        gap: 2px;
+      }
+
+      .course-term {
+        text-align: left;
+      }
+
+      .grouped-courses {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="top-banner">
+    <h1>Hasan Mahmood</h1>
+
+    <p class="subtitle">
+      PhD Candidate<br>
+      Co-Manager, Nova Scotia Math Circles Program
+    </p>
+
+    <p class="affiliation">
+      Department of Mathematics and Statistics<br>
+      Dalhousie University
+    </p>
+  </header>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html">Home</a>
+      <a href="index.html#research">Research</a>
+      <a href="index.html#publications">Publications</a>
+      <a class="active" href="teaching.html">Teaching</a>
+      <a href="index.html#mentoring">Mentoring</a>
+      <a href="index.html#outreach">Outreach</a>
+      <a href="index.html#talks">Talks</a>
+      <a href="cv.html">CV</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="page-intro">
+      <h2>Teaching</h2>
+
+      <p>
+        I have more than fifteen years of university teaching experience across
+        Canada, the United States, and Pakistan. I have taught a broad range of
+        undergraduate mathematics and computer science courses, including
+        algebra, calculus, discrete mathematics, optimization, probability and
+        statistics, topology, and graph theory.
+      </p>
+    </section>
+
+    <section class="section-card">
+      <h2 class="section-title">Canadian Universities</h2>
+
+      <div class="institution">
+        <h3>Dalhousie University</h3>
+        <p class="institution-note">Halifax, Nova Scotia, Canada</p>
+
+        <ul class="course-list">
+          <li>
+            <span class="course-title">MATH 1030 — Linear Algebra and Matrix Theory I</span>
+            <span class="course-term">Summer 2026</span>
+          </li>
+          <li>
+            <span class="course-title">MATH 1290 — Engineering Mathematics II</span>
+            <span class="course-term">Summer 2025</span>
+          </li>
+          <li>
+            <span class="course-title">CSCI/MATH 2113 — Discrete Structures II</span>
+            <span class="course-term">Winter 2025</span>
+          </li>
+          <li>
+            <span class="course-title">MATH 3300 — Optimization</span>
+            <span class="course-term">Fall 2024</span>
+          </li>
+          <li>
+            <span class="course-title">MATH 1030 — Linear Algebra and Matrix Theory I</span>
+            <span class="course-term">Summer 2024</span>
+          </li>
+          <li>
+            <span class="course-title">CSCI 2360 — Probability and Statistics for Computer Science</span>
+            <span class="course-term">Winter 2024</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="institution">
+        <h3>Mount Saint Vincent University</h3>
+        <p class="institution-note">Halifax, Nova Scotia, Canada</p>
+
+        <ul class="course-list">
+          <li>
+            <span class="course-title">MATH 1102 — Precalculus I</span>
+            <span class="course-term">Fall 2024</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2 class="section-title">Tulane University</h2>
+
+      <div class="institution">
+        <h3>Department of Mathematics</h3>
+        <p class="institution-note">New Orleans, Louisiana, USA</p>
+
+        <ul class="course-list">
+          <li>
+            <span class="course-title">Long Calculus II</span>
+            <span class="course-term">Summer 2020</span>
+          </li>
+          <li>
+            <span class="course-title">Abstract Algebra II</span>
+            <span class="course-term">Spring 2020</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2 class="section-title">Government College University Lahore</h2>
+
+      <p>
+        During my appointments as Lecturer, Assistant Professor, and Associate
+        Professor, I taught a wide range of undergraduate mathematics courses.
+      </p>
+
+      <div class="grouped-courses">
+        <div class="course-group">
+          <h4>Algebra and Discrete Mathematics</h4>
+          <ul>
+            <li>Algebra I</li>
+            <li>Algebra II</li>
+            <li>Linear Algebra</li>
+            <li>Rings and Modules</li>
+            <li>Discrete Mathematics</li>
+            <li>Number Theory</li>
+            <li>Graph Theory</li>
+          </ul>
+        </div>
+
+        <div class="course-group">
+          <h4>Calculus and Analysis</h4>
+          <ul>
+            <li>Precalculus</li>
+            <li>Calculus and Analytic Geometry</li>
+            <li>Calculus I</li>
+            <li>Calculus III</li>
+            <li>Multivariate Calculus</li>
+            <li>Real Analysis I</li>
+            <li>Complex Variables and Transforms</li>
+          </ul>
+        </div>
+
+        <div class="course-group">
+          <h4>Geometry and Topology</h4>
+          <ul>
+            <li>Topology</li>
+            <li>Vector and Tensor Analysis</li>
+          </ul>
+        </div>
+
+        <div class="course-group">
+          <h4>Statistics and General Mathematics</h4>
+          <ul>
+            <li>Mathematical Statistics</li>
+            <li>Elementary Mathematics</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <h2 class="section-title">College-Level Teaching at GCU Lahore</h2>
+
+      <ul class="course-list">
+        <li>
+          <span class="course-title">Algebra and Trigonometry</span>
+          <span class="course-term">Grade 11</span>
+        </li>
+        <li>
+          <span class="course-title">Calculus and Analytical Geometry</span>
+          <span class="course-term">Grade 12</span>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Hasan Mahmood · Hosted with GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
