@@ -8,6 +8,33 @@ h2{color:var(--navy)}.card{margin-top:28px}.section-title{padding-bottom:9px;bor
 .highlights{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:28px}.highlight{background:white;border-top:5px solid var(--blue);border-radius:10px;padding:23px;box-shadow:var(--shadow)}.highlight h3{color:var(--navy);margin-top:0}.highlight p{color:var(--muted)}
 ul.clean{padding-left:22px}.institution h3{color:var(--navy);margin-bottom:3px}.institution-note{color:var(--muted);font-style:italic;margin-top:0}.course-list{list-style:none;padding:0}.course-list li{display:grid;grid-template-columns:1fr 190px;gap:20px;padding:12px 0;border-bottom:1px solid var(--border)}.course-title{font-weight:bold}.course-term{text-align:right;color:var(--muted)}.grouped{display:grid;grid-template-columns:1fr 1fr;gap:24px}
 footer{background:var(--navy);color:#d9e7f3;text-align:center;padding:25px 20px}@media(max-width:800px){.hero{grid-template-columns:1fr}.profile-photo{grid-row:1;max-width:270px;margin:auto}.highlights,.grouped{grid-template-columns:1fr}.course-list li{grid-template-columns:1fr}.course-term{text-align:left}}
+
+/* Background photograph for Talks page */
+.talks-photo-banner {
+  background:
+    linear-gradient(
+      rgba(16, 42, 67, 0.55),
+      rgba(16, 42, 67, 0.70)
+    ),
+    url("mcmaster-talk.jpg");
+
+  background-size: cover;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+
+  padding: 85px 25px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.talks-photo-banner h2 {
+  color: white;
+  font-size: 32px;
+  margin: 0;
+}
 </style></head><body>
 <header class="top-banner"><h1>Hasan Mahmood</h1><p>PhD Candidate<br>Co-Manager, Nova Scotia Math Circles Program</p><p class="affiliation">Department of Mathematics and Statistics<br>Dalhousie University</p></header>
-<nav><div class="nav-inner"><a href="index.html">Home</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="teaching.html">Teaching</a><a href="mentoring.html">Mentoring</a><a href="outreach.html">Outreach</a><a class=active href="talks.html">Talks</a><a href="cv.html">CV</a><a href="contact.html">Contact</a></div></nav><main><section class="card"><h2>Talks</h2><p class="intro">Selected invited and contributed talks and presentations.</p></section><section class="card"><ul class="clean"><li><em>Simplicial Resolutions of Powers of Monomial Ideals</em>, CMS Winter Meeting, Toronto, 2025.</li><li><em>Mutations of Simplicial Complexes</em>, CMS Winter Meeting, Montreal, 2023.</li><li><em>F-Ideals and Quasi F-Ideals</em>, McMaster University, 2019.</li><li><em>F-Ideals, F-Graphs, and F-Simplicial Complexes</em>, Tulane University, 2019.</li></ul></section></main><footer>© 2026 Hasan Mahmood · Hosted with GitHub Pages</footer></body></html>
+<nav><div class="nav-inner"><a href="index.html">Home</a><a href="research.html">Research</a><a href="publications.html">Publications</a><a href="teaching.html">Teaching</a><a href="mentoring.html">Mentoring</a><a href="outreach.html">Outreach</a><a class=active href="talks.html">Talks</a><a href="cv.html">CV</a><a href="contact.html">Contact</a></div></nav><main><section class="card"><div class="talks-photo-banner">
+  <h2>Talks</h2>
+</div><p class="intro">Selected invited and contributed talks and presentations.</p></section><section class="card"><ul class="clean"><li><em>Simplicial Resolutions of Powers of Monomial Ideals</em>, CMS Winter Meeting, Toronto, 2025.</li><li><em>Mutations of Simplicial Complexes</em>, CMS Winter Meeting, Montreal, 2023.</li><li><em>F-Ideals and Quasi F-Ideals</em>, McMaster University, 2019.</li><li><em>F-Ideals, F-Graphs, and F-Simplicial Complexes</em>, Tulane University, 2019.</li></ul></section></main><footer>© 2026 Hasan Mahmood · Hosted with GitHub Pages</footer></body></html>
