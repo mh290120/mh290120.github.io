@@ -1,1 +1,277 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Academic Appointments | Hasan Mahmood</title>
+
+<style>
+:root {
+  --navy: #102a43;
+  --navy-light: #243b53;
+  --blue: #3d6f9e;
+  --bg: #f7f9fc;
+  --text: #24303d;
+  --muted: #5f6c7b;
+  --border: #d9e2ec;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.65;
+}
+
+.top-banner {
+  background: linear-gradient(120deg, var(--navy), var(--blue));
+  color: white;
+  text-align: center;
+  padding: 45px 20px 38px;
+}
+
+.top-banner h1 {
+  font-size: 2.5rem;
+  margin: 0 0 10px;
+}
+
+.top-banner p { margin: 4px; }
+.affiliation { color: #d9e7f3; }
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--navy-light);
+}
+
+.nav-inner {
+  max-width: 1180px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 16px 14px;
+}
+
+nav a:hover, nav a.active {
+  background: var(--blue);
+}
+
+main {
+  max-width: 1080px;
+  margin: 34px auto;
+  padding: 0 20px 60px;
+}
+
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 32px 34px;
+  box-shadow: 0 10px 30px rgba(16,42,67,.08);
+}
+
+h2 {
+  color: var(--navy);
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 10px;
+}
+
+details {
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+summary {
+  padding: 18px 22px;
+  cursor: pointer;
+  background: #f7f9fc;
+  color: var(--navy);
+}
+
+summary:hover {
+  background: #eaf1f8;
+}
+
+summary strong {
+  display: block;
+  font-size: 1.08rem;
+}
+
+.institution {
+  display: block;
+  color: var(--muted);
+}
+
+.dates {
+  display: block;
+  color: var(--blue);
+  font-size: .92rem;
+}
+
+.appointment-description {
+  padding: 16px 22px;
+  border-top: 1px solid var(--border);
+}
+
+.appointment-description p {
+  margin: 0;
+}
+
+footer {
+  background: var(--navy);
+  color: #d9e7f3;
+  text-align: center;
+  padding: 25px 20px;
+}
+
+@media(max-width:800px) {
+  .card { padding: 22px 18px; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="top-banner">
+  <h1>Hasan Mahmood</h1>
+  <p>
+    PhD Candidate<br>
+    Co-Manager, Nova Scotia Math Circles Program
+  </p>
+  <p class="affiliation">
+    Department of Mathematics and Statistics<br>
+    Dalhousie University
+  </p>
+</header>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html">Home</a>
+    <a class="active" href="appointments.html">Academic Appointments</a>
+    <a href="research.html">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="mentoring.html">Mentoring</a>
+    <a href="outreach.html">Outreach</a>
+    <a href="talks.html">Talks</a>
+    <a href="cv.html">CV</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<main>
+<section class="card">
+
+<h2>Academic Appointments</h2>
+
+<p>
+A chronological overview of my academic appointments
+in teaching and research.
+Click on an appointment to view additional details.
+</p>
+
+<details>
+  <summary>
+    <strong>Associate Professor of Mathematics</strong>
+    <span class="institution">
+      Government College University Lahore, Pakistan
+    </span>
+    <span class="dates">2021–2023</span>
+  </summary>
+  <div class="appointment-description">
+    <p>
+      University teaching, mathematical research,
+      graduate supervision, and academic leadership.
+    </p>
+  </div>
+</details>
+
+<details>
+  <summary>
+    <strong>
+      Visiting Postdoctoral Fellow and
+      Adjunct Assistant Professor
+    </strong>
+    <span class="institution">
+      Tulane University, New Orleans, USA
+    </span>
+    <span class="dates">2019–2020</span>
+  </summary>
+  <div class="appointment-description">
+    <p>
+      Postdoctoral research, academic collaboration,
+      and university-level teaching.
+    </p>
+  </div>
+</details>
+
+<details>
+  <summary>
+    <strong>Assistant Professor of Mathematics</strong>
+    <span class="institution">
+      Government College University Lahore, Pakistan
+    </span>
+    <span class="dates">2014–2021</span>
+  </summary>
+  <div class="appointment-description">
+    <p>
+      Teaching, mathematical research,
+      student supervision, and academic service.
+    </p>
+  </div>
+</details>
+
+<details>
+  <summary>
+    <strong>Lecturer in Mathematics</strong>
+    <span class="institution">
+      Government College University Lahore, Pakistan
+    </span>
+    <span class="dates">2007–2014</span>
+  </summary>
+  <div class="appointment-description">
+    <p>
+      Undergraduate teaching, student mentoring,
+      and departmental academic activities.
+    </p>
+  </div>
+</details>
+
+<details>
+  <summary>
+    <strong>Lecturer</strong>
+    <span class="institution">
+      COMSATS Institute of Information Technology,
+      Lahore Campus, Pakistan
+    </span>
+    <span class="dates">March–July 2007</span>
+  </summary>
+  <div class="appointment-description">
+    <p>
+      University-level teaching and related
+      academic responsibilities.
+    </p>
+  </div>
+</details>
+
+</section>
+</main>
+
+<footer>
+  © 2026 Hasan Mahmood · Hosted with GitHub Pages
+</footer>
+
+</body>
+</html>
