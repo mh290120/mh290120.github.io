@@ -37,6 +37,79 @@ footer{background:var(--navy);color:#d9e7f3;text-align:center;padding:25px 20px}
   transform: translateY(-3px);
 }
 
+
+/* Compact academic header */
+
+.top-banner {
+  background: linear-gradient(120deg, #102a43, #3d6f9e);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.top-banner h1 {
+  font-size: 2rem;
+  margin: 0 0 15px;
+}
+
+/* Four boxes in a 2 x 2 grid */
+
+.academic-roles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.academic-role {
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 8px;
+  padding: 12px 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.academic-role strong {
+  color: white;
+  font-size: 1rem;
+}
+
+.academic-role p {
+  color: #f0f3f7;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin: 3px 0;
+}
+
+/* Individual box colours */
+
+.academic-role:nth-child(1) {
+  background: #244a70;
+}
+
+.academic-role:nth-child(2) {
+  background: #365c50;
+}
+
+.academic-role:nth-child(3) {
+  background: #665078;
+}
+
+.academic-role:nth-child(4) {
+  background: #865a43;
+}
+
+/* Mobile layout */
+
+@media (max-width: 650px) {
+  .academic-roles {
+    grid-template-columns: 1fr;
+  }
+}
+
 </style></head><body>
 
 <header class="top-banner">
