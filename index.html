@@ -1,195 +1,111 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Home | Hasan Mahmood</title><style>
-:root{--navy:#102a43;--navy-light:#243b53;--blue:#3d6f9e;--bg:#f7f9fc;--white:#fff;--text:#24303d;--muted:#5f6c7b;--border:#d9e2ec;--shadow:0 10px 30px rgba(16,42,67,.08)}
-*{box-sizing:border-box}body{margin:0;font-family:Georgia,"Times New Roman",serif;color:var(--text);background:var(--bg);line-height:1.65}a{color:var(--blue)}
-.top-banner{background:linear-gradient(120deg,var(--navy),var(--blue));color:white;text-align:center;padding:45px 20px 38px}.top-banner h1{font-size:2.5rem;margin:0 0 10px}.top-banner p{margin:4px}.affiliation{color:#d9e7f3}
-nav{position:sticky;top:0;z-index:1000;background:var(--navy-light)}.nav-inner{max-width:1180px;margin:auto;display:flex;justify-content:center;flex-wrap:wrap}nav a{color:white;text-decoration:none;padding:16px 18px}nav a:hover,nav a.active{background:var(--blue)}
-main{max-width:1080px;margin:34px auto;padding:0 20px 60px}.hero,.card{background:white;border-radius:14px;padding:32px 34px;box-shadow:var(--shadow)}.hero{display:grid;grid-template-columns:1fr 270px;gap:38px;align-items:center}.hero p,.intro{font-size:1.06rem;line-height:1.8;text-align:justify}.profile-photo{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 34%;border-radius:14px;border:1px solid var(--border)}
-h2{color:var(--navy)}.card{margin-top:28px}.section-title{padding-bottom:9px;border-bottom:2px solid var(--border)}.button{display:inline-block;background:var(--navy);color:white;text-decoration:none;padding:10px 17px;border-radius:7px;margin:4px}.button:hover{background:var(--blue)}
-.highlights{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:28px}.highlight{background:white;border-top:5px solid var(--blue);border-radius:10px;padding:23px;box-shadow:var(--shadow)}.highlight h3{color:var(--navy);margin-top:0}.highlight p{color:var(--muted)}
-ul.clean{padding-left:22px}.institution h3{color:var(--navy);margin-bottom:3px}.institution-note{color:var(--muted);font-style:italic;margin-top:0}.course-list{list-style:none;padding:0}.course-list li{display:grid;grid-template-columns:1fr 190px;gap:20px;padding:12px 0;border-bottom:1px solid var(--border)}.course-title{font-weight:bold}.course-term{text-align:right;color:var(--muted)}.grouped{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-footer{background:var(--navy);color:#d9e7f3;text-align:center;padding:25px 20px}@media(max-width:800px){.hero{grid-template-columns:1fr}.profile-photo{grid-row:1;max-width:270px;margin:auto}.highlights,.grouped{grid-template-columns:1fr}.course-list li{grid-template-columns:1fr}.course-term{text-align:left}}
-
-/* Colours for the four academic roles */
-
-.academic-role:nth-child(1) {
-  background-color: #244a70;
-}
-
-.academic-role:nth-child(2) {
-  background-color: #365c50;
-}
-
-.academic-role:nth-child(3) {
-  background-color: #665078;
-}
-
-.academic-role:nth-child(4) {
-  background-color: #865a43;
-}
-
-.academic-role {
-  border: 1px solid rgba(255,255,255,0.22);
-  border-radius: 8px;
-  transition: transform 0.2s ease;
-}
-
-.academic-role:hover {
-  transform: translateY(-3px);
-}
-
-
-/* Compact academic header */
-
-.top-banner {
-  background: linear-gradient(120deg, #102a43, #3d6f9e);
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
-.top-banner h1 {
-  font-size: 2rem;
-  margin: 0 0 15px;
-}
-
-/* Four boxes in a 2 x 2 grid */
-
-.academic-roles {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
-  max-width: 950px;
-  margin: 0 auto;
-}
-
-.academic-role {
-  border: 1px solid rgba(255,255,255,0.25);
-  border-radius: 8px;
-  padding: 12px 15px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.academic-role strong {
-  color: white;
-  font-size: 1rem;
-}
-
-.academic-role p {
-  color: #f0f3f7;
-  font-size: 0.85rem;
-  line-height: 1.4;
-  margin: 3px 0;
-}
-
-/* Individual box colours */
-
-.academic-role:nth-child(1) {
-  background: #244a70;
-}
-
-.academic-role:nth-child(2) {
-  background: #365c50;
-}
-
-.academic-role:nth-child(3) {
-  background: #665078;
-}
-
-.academic-role:nth-child(4) {
-  background: #865a43;
-}
-
-/* Mobile layout */
-
-@media (max-width: 650px) {
-  .academic-roles {
-    grid-template-columns: 1fr;
-  }
-}
-
-</style></head><body>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | Hasan Mahmood</title>
+<style>
+:root { --navy:#102a43; --navy-light:#243b53; --blue:#3d6f9e; --bg:#f7f9fc; --white:#fff; --text:#24303d; --muted:#5f6c7b; --border:#d9e2ec; --shadow:0 10px 30px rgba(16,42,67,.08); }
+* { box-sizing:border-box; }
+body { margin:0; font-family:Georgia,"Times New Roman",serif; color:var(--text); background:var(--bg); line-height:1.65; }
+a { color:var(--blue); }
+/* Compact, four-cell academic banner */
+.top-banner { background:linear-gradient(120deg,var(--navy),var(--blue)); color:white; text-align:center; padding:20px 20px 22px; }
+.top-banner h1 { font-size:2rem; line-height:1.2; margin:0 0 14px; }
+.academic-roles { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; width:100%; max-width:950px; margin:0 auto; }
+.academic-role { min-width:0; border:1px solid rgba(255,255,255,.25); border-radius:8px; padding:11px 14px; display:flex; flex-direction:column; align-items:center; justify-content:center; transition:transform .2s ease,box-shadow .2s ease; }
+.academic-role:nth-child(1) { background:#244a70; }
+.academic-role:nth-child(2) { background:#365c50; }
+.academic-role:nth-child(3) { background:#665078; }
+.academic-role:nth-child(4) { background:#865a43; }
+.academic-role:hover { transform:translateY(-2px); box-shadow:0 5px 14px rgba(0,0,0,.16); }
+.academic-role strong { color:white; font-size:1rem; line-height:1.35; }
+.academic-role p { color:#f0f3f7; font-size:.85rem; line-height:1.35; margin:3px 0 0; }
+nav { position:sticky; top:0; z-index:1000; background:var(--navy-light); }
+.nav-inner { max-width:1180px; margin:auto; display:flex; justify-content:center; flex-wrap:wrap; }
+nav a { color:white; text-decoration:none; padding:16px 18px; }
+nav a:hover, nav a.active { background:var(--blue); }
+main { max-width:1080px; margin:34px auto; padding:0 20px 60px; }
+.hero,.card { background:white; border-radius:14px; padding:32px 34px; box-shadow:var(--shadow); }
+.hero { display:grid; grid-template-columns:1fr 270px; gap:38px; align-items:center; }
+.hero p,.intro { font-size:1.06rem; line-height:1.8; text-align:justify; }
+.profile-photo { width:100%; aspect-ratio:4/5; object-fit:cover; object-position:center 34%; border-radius:14px; border:1px solid var(--border); }
+h2 { color:var(--navy); }
+.card { margin-top:28px; }
+.section-title { padding-bottom:9px; border-bottom:2px solid var(--border); }
+.button { display:inline-block; background:var(--navy); color:white; text-decoration:none; padding:10px 17px; border-radius:7px; margin:4px; }
+.button:hover { background:var(--blue); }
+.highlights { display:grid; grid-template-columns:repeat(4,1fr); gap:18px; margin-top:28px; }
+.highlight { background:white; border-top:5px solid var(--blue); border-radius:10px; padding:23px; box-shadow:var(--shadow); }
+.highlight h3 { color:var(--navy); margin-top:0; }
+.highlight p { color:var(--muted); }
+ul.clean { padding-left:22px; }
+.institution h3 { color:var(--navy); margin-bottom:3px; }
+.institution-note { color:var(--muted); font-style:italic; margin-top:0; }
+.course-list { list-style:none; padding:0; }
+.course-list li { display:grid; grid-template-columns:1fr 190px; gap:20px; padding:12px 0; border-bottom:1px solid var(--border); }
+.course-title { font-weight:bold; }
+.course-term { text-align:right; color:var(--muted); }
+.grouped { display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+footer { background:var(--navy); color:#d9e7f3; text-align:center; padding:25px 20px; }
+@media (max-width:800px) { .hero { grid-template-columns:1fr; } .profile-photo { grid-row:1; max-width:270px; margin:auto; } .highlights,.grouped { grid-template-columns:1fr; } .course-list li { grid-template-columns:1fr; } .course-term { text-align:left; } }
+@media (max-width:650px) { .academic-roles { grid-template-columns:1fr; } .top-banner { padding:16px 14px 18px; } .top-banner h1 { font-size:1.8rem; } .academic-role { padding:10px 12px; } .hero,.card { padding:22px; } nav a { padding:11px 12px; } }
+</style>
+</head>
+<body>
 <header class="top-banner">
   <h1>Hasan Mahmood</h1>
-
   <div class="academic-roles">
-
     <div class="academic-role">
       <strong>PhD Candidate in Mathematics</strong>
       <p>Dalhousie University</p>
       <p>2023–Present | Expected Summer 2027</p>
     </div>
-
     <div class="academic-role">
       <strong>Associate Professor of Mathematics</strong>
       <p>Government College University Lahore</p>
       <p>On Leave Since August 2023</p>
     </div>
-
     <div class="academic-role">
       <strong>Co-Manager, Nova Scotia Math Circles</strong>
       <p>Dalhousie University</p>
       <p>April 2026–Present</p>
     </div>
-
     <div class="academic-role">
       <strong>Part-Time University Mathematics Teacher</strong>
       <p>Teaching Assistant &amp; Marker</p>
       <p>Dalhousie University</p>
       <p>September 2023–Present</p>
     </div>
-
   </div>
 </header>
-
-<nav><div class="nav-inner"><a class=active href="index.html">Home</a>
+<nav><div class="nav-inner">
+<a class="active" href="index.html">Home</a>
 <a href="appointments.html">Academic Appointments</a>
-<a href="research.html">Research</a><a href="teaching.html">Teaching</a><a href="mentoring.html">Mentoring</a><a href="outreach.html">Outreach</a><a href="talks.html">Talks</a><a href="cv.html">CV</a><a href="contact.html">Contact</a></div></nav><main><section class="hero"><div> 
+<a href="research.html">Research</a>
+<a href="teaching.html">Teaching</a>
+<a href="mentoring.html">Mentoring</a>
+<a href="outreach.html">Outreach</a>
+<a href="talks.html">Talks</a>
+<a href="cv.html">CV</a>
+<a href="contact.html">Contact</a>
+</div></nav>
+<main>
+<section class="hero"><div>
 <h2>Welcome</h2>
-
-<p>
-I am currently pursuing my second PhD in Mathematics at
-Dalhousie University, where my research focuses on free
-resolutions of monomial ideals and their powers.
-I previously served as an Associate Professor of Mathematics
-at Government College University Lahore and have more than
-15 years of experience in university teaching, mathematical
-research, graduate supervision, and academic leadership.
-I was also a Visiting Postdoctoral Fellow and Adjunct
-Assistant Professor at Tulane University (2019–2020).
-</p>
-
-<p>
-My primary research interests lie in
-<strong>Commutative Algebra, Combinatorics, and Algebraic
-Geometry</strong>, particularly their interactions.
-I am interested in constructing free resolutions and studying
-algebraic and homological invariants through algebraic,
-combinatorial, and topological methods.
-My research also explores the connections among monomial
-ideals, graphs, and simplicial complexes, including how
-invariants change under transformations of combinatorial
-structures. In addition, I maintain an independent interest
-in Graph Theory, particularly graph polynomials and
-structural invariants.
-</p>
-
-<p>
-Beyond research and teaching, I serve as Co-Manager of the
-Nova Scotia Math Circles Program, where I help organize
-mathematics outreach activities and promote mathematical
-curiosity among school students across Nova Scotia.
-I am also actively involved in initiatives supporting
-innovative mathematics teaching and professional development.
-My work reflects a strong commitment to advancing mathematical
-research, fostering student learning, and promoting mathematics
-through outreach and community engagement. </p><a class="button" href="research.html">Research</a><a class="button" href="publications.html">Publications</a><a class="button" href="teaching.html">Teaching</a></div><img class="profile-photo" src="hasan-mahmood.jpg" alt="Hasan Mahmood"></section>
-<section class="highlights"><div class="highlight"><h3>Research</h3><p>Combinatorial commutative algebra, monomial ideals, simplicial complexes, and algebraic combinatorics.</p></div><div class="highlight"><h3>Publications</h3><p>Research publications spanning commutative algebra, combinatorics, and related areas.</p></div><div class="highlight"><h3>Teaching</h3><p>More than fifteen years of university teaching experience.</p></div><div class="highlight"><h3>Mentoring</h3><p>Graduate supervision, student mentoring, and academic leadership.</p></div></section> <section class="card" style="margin-top:25px; text-align:center;">
-  <p style="color:#5f6c7b; font-style:italic;">
-    This website is currently under development.
-    Additional content and updates will be added soon.
-  </p>
-</section></main><footer>© 2026 Hasan Mahmood · Hosted with GitHub Pages</footer></body></html>
+<p>I am currently pursuing my second PhD in Mathematics at Dalhousie University, where my research focuses on free resolutions of monomial ideals and their powers. I previously served as an Associate Professor of Mathematics at Government College University Lahore and have more than 15 years of experience in university teaching, mathematical research, graduate supervision, and academic leadership. I was also a Visiting Postdoctoral Fellow and Adjunct Assistant Professor at Tulane University (2019–2020).</p>
+<p>My primary research interests lie in <strong>Commutative Algebra, Combinatorics, and Algebraic Geometry</strong>, particularly their interactions. I am interested in constructing free resolutions and studying algebraic and homological invariants through algebraic, combinatorial, and topological methods. My research also explores the connections among monomial ideals, graphs, and simplicial complexes, including how invariants change under transformations of combinatorial structures. In addition, I maintain an independent interest in Graph Theory, particularly graph polynomials and structural invariants.</p>
+<p>Beyond research and teaching, I serve as Co-Manager of the Nova Scotia Math Circles Program, where I help organize mathematics outreach activities and promote mathematical curiosity among school students across Nova Scotia. I am also actively involved in initiatives supporting innovative mathematics teaching and professional development. My work reflects a strong commitment to advancing mathematical research, fostering student learning, and promoting mathematics through outreach and community engagement.</p>
+<a class="button" href="research.html">Research</a><a class="button" href="research.html">Publications</a><a class="button" href="teaching.html">Teaching</a>
+</div><img class="profile-photo" src="hasan-mahmood.jpg" alt="Hasan Mahmood"></section>
+<section class="highlights">
+<div class="highlight"><h3>Research</h3><p>Combinatorial commutative algebra, monomial ideals, simplicial complexes, and algebraic combinatorics.</p></div>
+<div class="highlight"><h3>Publications</h3><p>Research publications spanning commutative algebra, combinatorics, and related areas.</p></div>
+<div class="highlight"><h3>Teaching</h3><p>More than fifteen years of university teaching experience.</p></div>
+<div class="highlight"><h3>Mentoring</h3><p>Graduate supervision, student mentoring, and academic leadership.</p></div>
+</section>
+<section class="card" style="margin-top:25px;text-align:center;"><p style="color:#5f6c7b;font-style:italic;">This website is currently under development. Additional content and updates will be added soon.</p></section>
+</main>
+<footer>© 2026 Hasan Mahmood · Hosted with GitHub Pages</footer>
+</body>
+</html>
