@@ -1,0 +1,15 @@
+Header background photo sources (real photographs, not AI-generated)
+
+All page header backgrounds were assigned using free photos hosted on Unsplash.
+Each page uses a different landscape image loaded through its direct image URL.
+
+Home: Sunrise lake and mountains — https://unsplash.com/photos/a-large-body-of-water-surrounded-by-mountains-OvfI1PiuTpE
+Education: Forest sunlight — https://unsplash.com/photos/a-forest-filled-with-lots-of-trees-covered-in-sunlight-P4f7H2B7aF4
+Academic Appointments: Moraine Lake, Canada — https://unsplash.com/photos/lake-mountains-and-trees-w79UXGGlvhQ
+Research: Starry night sky over mountains — https://unsplash.com/photos/a-starry-night-sky-over-a-mountain-range-6YcKNe4yOwE
+Teaching: Pathway between trees — https://unsplash.com/photos/pathway-between-trees-WGu05iTF3Ng
+Mentoring: Forest pathway — https://unsplash.com/photos/forest-pathway-GraajutbJHE
+Outreach: Cabot Trail, Nova Scotia — https://unsplash.com/photos/coastal-road-winds-along-the-cliffs-and-ocean-eF3fMCBFsDo
+Talks: Mountains and a lake reflect the colorful sunrise — https://unsplash.com/photos/mountains-and-a-lake-reflect-the-colorful-sunrise-bBi-tWkXf6A
+CV: Misty mountain landscape — https://unsplash.com/photos/misty-mountain-landscape-with-peaks-emerging-from-dense-fog-C55eb98CIT0
+Contact: Nova Scotia coastline — https://unsplash.com/photos/a-scenic-view-of-the-ocean-and-a-road-GHcFgHyVY3s

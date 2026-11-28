@@ -1,17 +1,105 @@
 /* Shared header and navigation — edit here for all pages. */
-header.shared-banner { background:linear-gradient(120deg,#102a43,#3d6f9e); color:white; text-align:center; padding:20px 20px 22px; }
-header.shared-banner h1 { color:white; font-size:2rem; line-height:1.2; margin:0 0 14px; }
-.shared-banner .banner-layout { display:grid; grid-template-columns:minmax(0,1fr) 170px; gap:14px; max-width:1080px; margin:auto; align-items:stretch; }
-.shared-banner .academic-roles { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; width:100%; margin:0; }
-.shared-banner .academic-role { background:#244a70; min-width:0; border:1px solid rgba(255,255,255,.25); border-radius:8px; padding:11px 14px; display:flex; flex-direction:column; align-items:center; justify-content:center; transition:transform .2s ease,box-shadow .2s ease; }
-.shared-banner .academic-role:hover { transform:translateY(-2px); box-shadow:0 5px 14px rgba(0,0,0,.16); }
-.shared-banner .academic-role strong { color:white; font-size:1rem; line-height:1.35; }
-.shared-banner .academic-role p { color:#f0f3f7; font-size:.85rem; line-height:1.35; margin:3px 0 0; text-align:center; }
-.shared-banner .banner-photo { position:relative; min-height:0; }
-.shared-banner .site-portrait { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 34%; border-radius:8px; border:1px solid rgba(255,255,255,.35); }
-nav.shared-nav { position:sticky; top:0; z-index:1000; background:#243b53; }
-.shared-nav .nav-inner { max-width:1440px; margin:auto; display:flex; justify-content:center; flex-wrap:wrap; }
-.shared-nav a { color:white; text-decoration:none; padding:16px 12px; white-space:nowrap; }
-.shared-nav a:hover,.shared-nav a.active { background:#3d6f9e; }
-@media(max-width:800px){.shared-banner .banner-layout{grid-template-columns:minmax(0,1fr) 140px;}}
-@media(max-width:650px){header.shared-banner{padding:16px 14px 18px;} header.shared-banner h1{font-size:1.8rem;} .shared-banner .banner-layout,.shared-banner .academic-roles{grid-template-columns:1fr;} .shared-banner .banner-photo{width:150px;height:180px;margin:auto;grid-row:1;} .shared-banner .academic-role{padding:10px 12px;} .shared-nav a{padding:11px 12px;}}
+header.shared-banner {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background-color: #102a43;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 20px 20px 22px;
+}
+header.shared-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(8, 24, 38, 0.82), rgba(25, 57, 87, 0.64));
+  z-index: 0;
+}
+header.shared-banner > * { position: relative; z-index: 1; }
+header.shared-banner h1 { color: white; font-size: 2rem; line-height: 1.2; margin: 0 0 14px; text-shadow: 0 2px 8px rgba(0,0,0,.28); }
+.shared-banner .banner-layout { display: grid; grid-template-columns: minmax(0,1fr) 170px; gap: 14px; max-width: 1080px; margin: auto; align-items: stretch; }
+.shared-banner .academic-roles { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; width: 100%; margin: 0; }
+.shared-banner .academic-role {
+  background: rgba(20, 47, 72, 0.72);
+  min-width: 0;
+  border: 1px solid rgba(255,255,255,.26);
+  border-radius: 8px;
+  padding: 11px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform .2s ease, box-shadow .2s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+  backdrop-filter: blur(2px);
+}
+.shared-banner .academic-role:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,.22); }
+.shared-banner .academic-role strong { color: white; font-size: 1rem; line-height: 1.35; }
+.shared-banner .academic-role p { color: #f0f3f7; font-size: .85rem; line-height: 1.35; margin: 3px 0 0; text-align: center; }
+.shared-banner .banner-photo { position: relative; min-height: 0; }
+.shared-banner .site-portrait {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 34%;
+  border-radius: 8px; border: 1px solid rgba(255,255,255,.35); box-shadow: 0 12px 28px rgba(0,0,0,.22);
+}
+nav.shared-nav { position: sticky; top: 0; z-index: 1000; background: #243b53; }
+.shared-nav .nav-inner { max-width: 1440px; margin: auto; display: flex; justify-content: center; flex-wrap: wrap; }
+.shared-nav a { color: white; text-decoration: none; padding: 16px 12px; white-space: nowrap; }
+.shared-nav a:hover, .shared-nav a.active { background: #3d6f9e; }
+
+/* Page-specific header photographs */
+body.page-index header.shared-banner {
+  background-image: url("https://images.unsplash.com/photo-1724169913051-49f6ff76a070?auto=format&fit=crop&fm=jpg&q=80&w=1800");
+  background-position: center 58%;
+}
+body.page-education header.shared-banner {
+  background-image: url("https://images.unsplash.com/photo-1631549623760-32e83c5dd5da?auto=format&fit=crop&fm=jpg&q=80&w=1800");
+  background-position: center 42%;
+}
+body.page-appointments header.shared-banner {
+  background-image: url("https://images.unsplash.com/photo-1533579436102-fcc5a403c554?auto=format&fit=crop&fm=jpg&q=80&w=1800");
+  background-position: center 50%;
+}
+body.page-research header.shared-banner {
+  background-image: url("https://images.unsplash.com/photo-1658239828542-daa29a4cd472?auto=format&fit=crop&fm=jpg&q=80&w=1800");
+  background-position: center 46%;
+}
+body.page-teaching header.shared-banner {
+  background-image: url("https://images.unsplash.com/photo-1567790484933-44b83527e991?auto=format&fit=crop&fm=jpg&q=80&w=1800");
+  background-position: center 52%;
+}
+body.page-mentoring header.shared-banner {
+  background-image: url("https://images.unsplash.com/photo-1471513671800-b09c87e1497c?auto=format&fit=crop&fm=jpg&q=80&w=1800");
+  background-position: center 50%;
+}
+body.page-outreach header.shared-banner {
+  background-image: url("https://images.unsplash.com/photo-1748299712616-56633544eca2?auto=format&fit=crop&fm=jpg&q=80&w=1800");
+  background-position: center 48%;
+}
+body.page-talks header.shared-banner {
+  background-image: url("https://images.unsplash.com/photo-1748446989555-da681d23ed7d?auto=format&fit=crop&fm=jpg&q=80&w=1800");
+  background-position: center 54%;
+}
+body.page-cv header.shared-banner {
+  background-image: url("https://images.unsplash.com/photo-1781813745733-36af0d892101?auto=format&fit=crop&fm=jpg&q=80&w=1800");
+  background-position: center 52%;
+}
+body.page-contact header.shared-banner {
+  background-image: url("https://images.unsplash.com/photo-1647179307653-97a662a73fcc?auto=format&fit=crop&fm=jpg&q=80&w=1800");
+  background-position: center 52%;
+}
+
+@media (max-width: 800px) {
+  .shared-banner .banner-layout { grid-template-columns: minmax(0,1fr) 140px; }
+}
+@media (max-width: 650px) {
+  header.shared-banner { padding: 16px 14px 18px; }
+  header.shared-banner h1 { font-size: 1.8rem; }
+  .shared-banner .banner-layout, .shared-banner .academic-roles { grid-template-columns: 1fr; }
+  .shared-banner .banner-photo { width: 150px; height: 180px; margin: auto; grid-row: 1; }
+  .shared-banner .academic-role { padding: 10px 12px; }
+  .shared-nav a { padding: 11px 12px; }
+  header.shared-banner::before { background: linear-gradient(180deg, rgba(8,24,38,.84), rgba(25,57,87,.68)); }
+}
