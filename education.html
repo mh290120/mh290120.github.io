@@ -140,26 +140,27 @@ footer {
   .card { padding: 22px 18px; }
 }
 
-.education-entry {display:grid;grid-template-columns:82px minmax(0,1fr);gap:20px;padding:24px 0;border-bottom:1px solid var(--border);}
+.education-entry {display:grid;grid-template-columns:210px minmax(0,1fr);gap:20px;padding:24px 0;border-bottom:1px solid var(--border);}
 .education-entry:last-child {border-bottom:0;}
-.education-entry img {width:76px;height:76px;object-fit:contain;}
+.education-entry img {width:110px;height:110px;object-fit:contain;justify-self:center;}
+.education-entry img.dal-logo {height:70px;width:auto;max-width:100%;}
 .education-entry h3 {margin:0;color:var(--navy);font-size:1.17rem;}
 .education-entry p {margin:10px 0 0;}
-@media(max-width:550px){.education-entry{grid-template-columns:1fr;gap:8px;}}
+@media(max-width:550px){.education-entry{grid-template-columns:1fr;gap:12px;} .education-entry img{justify-self:start;}}
 </style>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=3">
 </head>
 
 <body>
 
 <div id="site-header"></div>
-<script src="header.js"></script>
+<script src="header.js?v=3"></script>
 
 <main><section class="card"><h2>Education</h2>
-<article class="education-entry"><img src="dalhousie-logo.png" alt="University logo"><div><h3>PhD in Mathematics (In Progress)</h3><span class="institution">Dalhousie University, Halifax, Canada</span><span class="dates">September 2023–August 2027 (Expected)</span><p>My second PhD focuses on combinatorial commutative algebra, particularly free resolutions of powers of monomial ideals and their algebraic, combinatorial, and homological properties. I have completed the required coursework, comprehensive examinations, and research proposal requirements.</p><p><strong>Supervisor: Professor Sara Faridi. Supervisory committee: Professors Jeannette Janssen, Jason Brown, and Susan Cooper (University of Manitoba).</strong></p></div></article>
-<article class="education-entry"><img src="gcu-logo.png" alt="University logo"><div><h3>PhD in Mathematics</h3><span class="institution">Abdus Salam School of Mathematical Sciences, Government College University Lahore, Pakistan</span><span class="dates">October 2007–May 2012</span><p>My doctoral research on smooth/impulsive linear systems extended classical linear time-invariant differential systems using algebraic methods involving modules over polynomial and rational function rings. It addressed axiomatic characterization, controllability, interconnections, equivalence, and duality.</p><p><strong>Supervisor: Professor Vakhtang Lomadze.</strong></p></div></article>
-<article class="education-entry"><img src="gcu-logo.png" alt="University logo"><div><h3>MSc in Mathematics</h3><span class="institution">Government College University Lahore, Pakistan</span><span class="dates">September 2004–September 2006</span><p>Graduate coursework included algebra, analysis, differential geometry, topology, functional analysis, mechanics, mathematical physics, numerical analysis, rings and modules, and algebraic topology.</p><p><strong>Graduated first in my class; awarded the Gold Medal and a place on the Academic Roll of Honour.</strong></p></div></article>
-<article class="education-entry"><div aria-hidden="true"></div><div><h3>BA (Mathematics concentration)</h3><span class="institution">University of the Punjab, Lahore, Pakistan</span><span class="dates">August 2001–May 2003</span><p>A two-year Bachelor of Arts degree with a strong concentration in mathematics, comprising 50% of the program marks. Coursework covered calculus, linear algebra, elementary group theory, vector and tensor analysis, mechanics, and metric spaces.</p><p><strong>Minor: English.</strong></p></div></article>
+<article class="education-entry"><img class="dal-logo" src="dalhousie-logo.png" alt="Dalhousie University logo"><div><h3>PhD in Mathematics (In Progress)</h3><span class="institution">Dalhousie University, Halifax, Canada</span><span class="dates">September 2023–August 2027 (Expected)</span><p>My second PhD focuses on combinatorial commutative algebra, particularly free resolutions of powers of monomial ideals and their algebraic, combinatorial, and homological properties. I have completed the required coursework, comprehensive examinations, and research proposal requirements.</p><p><strong>Supervisor: Professor Sara Faridi. Supervisory committee: Professors Jeannette Janssen, Jason Brown, and Susan Cooper (University of Manitoba).</strong></p></div></article>
+<article class="education-entry"><img src="gcu-logo.png" alt="Government College University Lahore logo"><div><h3>PhD in Mathematics</h3><span class="institution">Abdus Salam School of Mathematical Sciences, Government College University Lahore, Pakistan</span><span class="dates">October 2007–May 2012</span><p>My doctoral research on smooth/impulsive linear systems extended classical linear time-invariant differential systems using algebraic methods involving modules over polynomial and rational function rings. It addressed axiomatic characterization, controllability, interconnections, equivalence, and duality.</p><p><strong>Supervisor: Professor Vakhtang Lomadze.</strong></p></div></article>
+<article class="education-entry"><img src="gcu-logo.png" alt="Government College University Lahore logo"><div><h3>MSc in Mathematics</h3><span class="institution">Government College University Lahore, Pakistan</span><span class="dates">September 2004–September 2006</span><p>Graduate coursework included algebra, analysis, differential geometry, topology, functional analysis, mechanics, mathematical physics, numerical analysis, rings and modules, and algebraic topology.</p><p><strong>Graduated first in my class; awarded the Gold Medal and a place on the Academic Roll of Honour.</strong></p></div></article>
+<article class="education-entry"><img src="punjab-university-logo.png" alt="University of the Punjab logo"><div><h3>BA (Mathematics concentration)</h3><span class="institution">University of the Punjab, Lahore, Pakistan</span><span class="dates">August 2001–May 2003</span><p>A two-year Bachelor of Arts degree with a strong concentration in mathematics, comprising 50% of the program marks. Coursework covered calculus, linear algebra, elementary group theory, vector and tensor analysis, mechanics, and metric spaces.</p><p><strong>Minor: English.</strong></p></div></article>
 </section></main>
 <footer>© 2026 Hasan Mahmood · Hosted with GitHub Pages</footer>
 </body></html>
