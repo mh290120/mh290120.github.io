@@ -3,7 +3,7 @@ header.shared-banner {
   position: relative;
   overflow: hidden;
   isolation: isolate;
-  background-color: #102a43;
+  background-color: #30383d;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -11,19 +11,13 @@ header.shared-banner {
   text-align: center;
   padding: 20px 20px 22px;
 }
-header.shared-banner::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(135deg, rgba(8, 24, 38, 0.82), rgba(25, 57, 87, 0.64));
-  z-index: 0;
-}
+
 header.shared-banner > * { position: relative; z-index: 1; }
-header.shared-banner h1 { color: white; font-size: 2rem; line-height: 1.2; margin: 0 0 14px; text-shadow: 0 2px 8px rgba(0,0,0,.28); }
+header.shared-banner h1 { color: white; font-size: 2rem; line-height: 1.2; margin: 0 0 14px; text-shadow: 0 1px 3px #000, 0 2px 9px rgba(0,0,0,.85); }
 .shared-banner .banner-layout { display: grid; grid-template-columns: minmax(0,1fr) 170px; gap: 14px; max-width: 1080px; margin: auto; align-items: stretch; }
 .shared-banner .academic-roles { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 12px; width: 100%; margin: 0; }
 .shared-banner .academic-role {
-  background: rgba(20, 47, 72, 0.72);
+  background: rgba(0, 0, 0, 0.65);
   min-width: 0;
   border: 1px solid rgba(255,255,255,.26);
   border-radius: 8px;
@@ -34,7 +28,7 @@ header.shared-banner h1 { color: white; font-size: 2rem; line-height: 1.2; margi
   justify-content: center;
   transition: transform .2s ease, box-shadow .2s ease;
   box-shadow: 0 8px 20px rgba(0,0,0,.15);
-  backdrop-filter: blur(2px);
+  backdrop-filter: none;
 }
 .shared-banner .academic-role:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,.22); }
 .shared-banner .academic-role strong { color: white; font-size: 1rem; line-height: 1.35; }
@@ -101,5 +95,8 @@ body.page-contact header.shared-banner {
   .shared-banner .banner-photo { width: 150px; height: 180px; margin: auto; grid-row: 1; }
   .shared-banner .academic-role { padding: 10px 12px; }
   .shared-nav a { padding: 11px 12px; }
-  header.shared-banner::before { background: linear-gradient(180deg, rgba(8,24,38,.84), rgba(25,57,87,.68)); }
+  
 }
+
+/* Preserve contrast against brighter landscapes. */
+.shared-banner .academic-role strong, .shared-banner .academic-role p { text-shadow: 0 1px 3px rgba(0,0,0,.85); }
