@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Education | Hasan Mahmood</title>
+
+<style>
+:root {
+  --navy: #102a43;
+  --navy-light: #243b53;
+  --blue: #3d6f9e;
+  --bg: #f7f9fc;
+  --text: #24303d;
+  --muted: #5f6c7b;
+  --border: #d9e2ec;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.65;
+}
+
+.top-banner {
+  background: linear-gradient(120deg, var(--navy), var(--blue));
+  color: white;
+  text-align: center;
+  padding: 45px 20px 38px;
+}
+
+.top-banner h1 {
+  font-size: 2.5rem;
+  margin: 0 0 10px;
+}
+
+.top-banner p { margin: 4px; }
+.affiliation { color: #d9e7f3; }
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--navy-light);
+}
+
+.nav-inner {
+  max-width: 1180px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 16px 14px;
+}
+
+nav a:hover, nav a.active {
+  background: var(--blue);
+}
+
+main {
+  max-width: 1080px;
+  margin: 34px auto;
+  padding: 0 20px 60px;
+}
+
+.card {
+  background: white;
+  border-radius: 14px;
+  padding: 32px 34px;
+  box-shadow: 0 10px 30px rgba(16,42,67,.08);
+}
+
+h2 {
+  color: var(--navy);
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 10px;
+}
+
+details {
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+summary {
+  padding: 18px 22px;
+  cursor: pointer;
+  background: #f7f9fc;
+  color: var(--navy);
+}
+
+summary:hover {
+  background: #eaf1f8;
+}
+
+summary strong {
+  display: block;
+  font-size: 1.08rem;
+}
+
+.institution {
+  display: block;
+  color: var(--muted);
+}
+
+.dates {
+  display: block;
+  color: var(--blue);
+  font-size: .92rem;
+}
+
+.appointment-description {
+  padding: 16px 22px;
+  border-top: 1px solid var(--border);
+}
+
+.appointment-description p {
+  margin: 0;
+}
+
+footer {
+  background: var(--navy);
+  color: #d9e7f3;
+  text-align: center;
+  padding: 25px 20px;
+}
+
+@media(max-width:800px) {
+  .card { padding: 22px 18px; }
+}
+
+.education-entry {display:grid;grid-template-columns:82px minmax(0,1fr);gap:20px;padding:24px 0;border-bottom:1px solid var(--border);}
+.education-entry:last-child {border-bottom:0;}
+.education-entry img {width:76px;height:76px;object-fit:contain;}
+.education-entry h3 {margin:0;color:var(--navy);font-size:1.17rem;}
+.education-entry p {margin:10px 0 0;}
+@media(max-width:550px){.education-entry{grid-template-columns:1fr;gap:8px;}}
+</style>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="site-header"></div>
+<script src="header.js"></script>
+
+<main><section class="card"><h2>Education</h2>
+<article class="education-entry"><img src="dalhousie-logo.png" alt="University logo"><div><h3>PhD in Mathematics (In Progress)</h3><span class="institution">Dalhousie University, Halifax, Canada</span><span class="dates">September 2023–August 2027 (Expected)</span><p>My second PhD focuses on combinatorial commutative algebra, particularly free resolutions of powers of monomial ideals and their algebraic, combinatorial, and homological properties. I have completed the required coursework, comprehensive examinations, and research proposal requirements.</p><p><strong>Supervisor: Professor Sara Faridi. Supervisory committee: Professors Jeannette Janssen, Jason Brown, and Susan Cooper (University of Manitoba).</strong></p></div></article>
+<article class="education-entry"><img src="gcu-logo.png" alt="University logo"><div><h3>PhD in Mathematics</h3><span class="institution">Abdus Salam School of Mathematical Sciences, Government College University Lahore, Pakistan</span><span class="dates">October 2007–May 2012</span><p>My doctoral research on smooth/impulsive linear systems extended classical linear time-invariant differential systems using algebraic methods involving modules over polynomial and rational function rings. It addressed axiomatic characterization, controllability, interconnections, equivalence, and duality.</p><p><strong>Supervisor: Professor Vakhtang Lomadze.</strong></p></div></article>
+<article class="education-entry"><img src="gcu-logo.png" alt="University logo"><div><h3>MSc in Mathematics</h3><span class="institution">Government College University Lahore, Pakistan</span><span class="dates">September 2004–September 2006</span><p>Graduate coursework included algebra, analysis, differential geometry, topology, functional analysis, mechanics, mathematical physics, numerical analysis, rings and modules, and algebraic topology.</p><p><strong>Graduated first in my class; awarded the Gold Medal and a place on the Academic Roll of Honour.</strong></p></div></article>
+<article class="education-entry"><div aria-hidden="true"></div><div><h3>BA (Mathematics concentration)</h3><span class="institution">University of the Punjab, Lahore, Pakistan</span><span class="dates">August 2001–May 2003</span><p>A two-year Bachelor of Arts degree with a strong concentration in mathematics, comprising 50% of the program marks. Coursework covered calculus, linear algebra, elementary group theory, vector and tensor analysis, mechanics, and metric spaces.</p><p><strong>Minor: English.</strong></p></div></article>
+</section></main>
+<footer>© 2026 Hasan Mahmood · Hosted with GitHub Pages</footer>
+</body></html>
