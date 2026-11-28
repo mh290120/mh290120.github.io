@@ -100,3 +100,37 @@ body.page-contact header.shared-banner {
 
 /* Preserve contrast against brighter landscapes. */
 .shared-banner .academic-role strong, .shared-banner .academic-role p { text-shadow: 0 1px 3px rgba(0,0,0,.85); }
+
+
+/* Coordinated nature-inspired content area; header and navigation remain unchanged. */
+body.page-index { --page-base: #e5eff6; --page-light: #f6fafc; --page-accent: #648aa4; }
+body.page-education { --page-base: #f1e9d9; --page-light: #fcfaf5; --page-accent: #a28a58; }
+body.page-appointments { --page-base: #e2eaf2; --page-light: #f7f9fc; --page-accent: #68839c; }
+body.page-research { --page-base: #e9e6f2; --page-light: #faf9fd; --page-accent: #82749d; }
+body.page-teaching { --page-base: #dce9df; --page-light: #f6faf5; --page-accent: #618569; }
+body.page-mentoring { --page-base: #eee6da; --page-light: #fcf9f4; --page-accent: #9b805d; }
+body.page-outreach { --page-base: #dceceb; --page-light: #f5fbfa; --page-accent: #558c88; }
+body.page-talks { --page-base: #e4ebf0; --page-light: #f8fafc; --page-accent: #6f879a; }
+body.page-cv { --page-base: #e8e9ec; --page-light: #fafafb; --page-accent: #828a95; }
+body.page-contact { --page-base: #deebf2; --page-light: #f5fafc; --page-accent: #59869d; }
+
+body[class*="page-"] {
+  background-color: var(--page-base, #e5eff6);
+  background-image: radial-gradient(ellipse at 8% 25%, rgba(255,255,255,.72), transparent 42%), radial-gradient(ellipse at 95% 65%, rgba(255,255,255,.48), transparent 40%), linear-gradient(135deg, var(--page-base, #e5eff6), var(--page-light, #f6fafc) 50%, var(--page-base, #e5eff6));
+  background-attachment: fixed;
+}
+body[class*="page-"] main > :is(.card,.hero), body[class*="page-"] main .highlight {
+  background: rgba(255,255,255,.95);
+  border: 1px solid color-mix(in srgb, var(--page-accent) 30%, white);
+  border-top: 3px solid var(--page-accent);
+  box-shadow: 0 8px 26px rgba(28,45,53,.075);
+}
+body[class*="page-"] main :is(.card,.hero) > h2:first-child,
+body[class*="page-"] main .hero > div > h2:first-child {
+  border-bottom: 1px solid color-mix(in srgb, var(--page-accent) 34%, white);
+  padding-bottom: 12px;
+}
+body[class*="page-"] main .section-title { border-bottom-color: color-mix(in srgb, var(--page-accent) 35%, white); }
+body.page-index main .update-note { padding: 15px 22px; border-top-width: 1px; text-align: center; }
+body.page-index main .update-note p { margin: 0; color: #536373; font-style: italic; }
+@media(max-width:650px) { body[class*="page-"] { background-attachment: scroll; } }
